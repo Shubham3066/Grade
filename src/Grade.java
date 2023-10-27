@@ -34,8 +34,8 @@
 	        int tmarks = 0;
 
 	        //Taking and adding all the marks
-	        for (int i = 0; i < totalsubs; i++) {
-	            System.out.println("Enter the marks obtained in subject " + (i + 1));
+	        for (int i = 1; i <= totalsubs; i++) {
+	            System.out.println("Enter the marks obtained in subject " + (i ));
 	            int marks = sc.nextInt();
 	            totalmarks += marks;
 	        }
