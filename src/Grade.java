@@ -29,25 +29,25 @@
 	        Scanner sc = new Scanner(System.in);
 
 	        //Taking input of how many subjects are there
-	        System.out.println("Enter the amount of subjects");
-	        int tsubs = sc.nextInt();
+	        System.out.println("Enter the Number of subjects");
+	        int totalsubs = sc.nextInt();
 	        int tmarks = 0;
 
 	        //Taking and adding all the marks
-	        for (int i = 0; i < tsubs; i++) {
+	        for (int i = 0; i < totalsubs; i++) {
 	            System.out.println("Enter the marks obtained in subject " + (i + 1));
 	            int marks = sc.nextInt();
-	            tmarks += marks;
+	            totalmarks += marks;
 	        }
 
 	        //Calculating Percentage
-	        int avgp = tmarks / tsubs;
+	        int avgp = totalmarks / totalsubs;
 
 	        //Calculating Grades
 	        String Grade = g.grade(avgp);
 
 	        //Displaying all the Data
-	        System.out.println("Total marks obtained :- " + tmarks);
+	        System.out.println("Total marks obtained :- " + totalmarks);
 	        System.out.println("Percentage obtained :- " + avgp+"%");
 	        System.out.println("Grade obtained :- " + Grade);
 
