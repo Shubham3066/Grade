@@ -5,17 +5,17 @@
 	class Grade{
 	    public String grade(int avgp){
 	        switch (avgp / 10) {
-	            case 10:
-	                return "A+";
 	            case 9:
-	                return "A";
+	                return "A+";
 	            case 8:
-	                return "B+";
+	                return "A";
 	            case 7:
-	                return "B";
+	                return "B+";
 	            case 6:
-	                return "C";
+	                return "B";
 	            case 5:
+	                return "C";
+	            case 4:
 	                return "D";
 	            default:
 	                return "F";
